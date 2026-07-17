@@ -29,7 +29,7 @@ To develop a low-cost, portable, and intelligent plant disease detection system 
 
 ## 🛠 Hardware Requirements
 
-- Raspberry Pi 4 / Raspberry Pi 5(used Raspberry Pi 4 Model B)
+- Raspberry Pi 4 / Raspberry Pi 5 (used Raspberry Pi 4 Model B)
 - Raspberry Pi Camera Module
 - SSD1306 OLED Display (Optional)
 - Micro SD Card (32GB or above)
