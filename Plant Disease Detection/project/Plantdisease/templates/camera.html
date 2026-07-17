@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Camera - Plant Disease Detection</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#b7f7b3,#5dbb63);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:850px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+    text-align:center;
+}
+
+h1{
+    color:#2E7D32;
+    margin-bottom:20px;
+}
+
+img{
+    width:700px;
+    height:500px;
+    border:5px solid #2E7D32;
+    border-radius:15px;
+}
+
+button{
+    margin-top:20px;
+    padding:15px 40px;
+    border:none;
+    border-radius:10px;
+    font-size:20px;
+    cursor:pointer;
+    color:white;
+    background:#2E7D32;
+}
+
+button:hover{
+    background:#1B5E20;
+}
+
+.home{
+    display:inline-block;
+    margin-top:20px;
+    color:#2E7D32;
+    font-size:18px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Live Plant Disease Detection</h1>
+
+<img src="{{ url_for('video_feed') }}" alt="Live Camera">
+
+<br>
+
+<form action="/capture" method="POST">
+    <button type="submit">Capture Image</button>
+</form>
+
+<br>
+
+<a href="/" class="home">Back to Home</a>
+
+</div>
+
+</body>
+</html>
